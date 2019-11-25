@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.moodanalyzer.MoodAnalyzerTest" tests="1" skipped="1" failures="0" errors="0" timestamp="2019-11-25T06:33:29" hostname="admin142-desktop" time="4.617">
+<testsuite name="com.moodanalyzer.MoodAnalyzerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-25T09:29:47" hostname="admin142-desktop" time="0.0">
   <properties/>
-  <testcase name="givenMessage_whenSad_shouldReturnHappy" classname="com.moodanalyzer.MoodAnalyzerTest" time="4.617">
-    <skipped/>
-  </testcase>
+  <testcase name="givenMessage_whenSad_shouldReturnHappy" classname="com.moodanalyzer.MoodAnalyzerTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
