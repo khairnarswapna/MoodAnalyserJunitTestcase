@@ -4,6 +4,7 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
 public class MoodAnalyserFactory {
+
     public static MoodAnalyser createMoodAnalyser(String message) throws ClassNotFoundException {
         try {
             Class<?> moodAnalysisClass = Class.forName("com.moodanalyzer.MoodAnalyser");

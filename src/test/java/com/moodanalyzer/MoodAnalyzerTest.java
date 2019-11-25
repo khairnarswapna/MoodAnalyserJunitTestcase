@@ -6,14 +6,14 @@ import org.junit.rules.ExpectedException;
 
 public class MoodAnalyzerTest
 {
-
-      @Test
+    @Test
       public void givenMoodAnalyzerClass_createIntance()
       {
           try {
-              MoodAnalyser moodAnalyser=MoodAnalyserFactory.createMoodAnalyser("This is happy message");
+
+              MoodAnalyser moodAnalyser=MoodAnalyserFactory.createMoodAnalyser("This is HAPPY message");
               String mood=moodAnalyser.analyseMood();
-              Assert.assertEquals("This is happy meassage",mood);
+              Assert.assertEquals("HAPPY",mood);
           } catch (ClassNotFoundException | MoodAnalysisException e) {
               e.printStackTrace();
           }

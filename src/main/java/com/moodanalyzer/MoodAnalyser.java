@@ -14,8 +14,9 @@ public class MoodAnalyser {
 
     public String analyseMood() throws MoodAnalysisException{
         try {
-            if(message.length()==0)
-                throw new MoodAnalysisException("I am in happy mood");
+            if(message.length()==0) {
+                throw new MoodAnalysisException("This is HAPPY message");
+            }
             if (message.contains("SAD"))
             {
                 return "SAD";
