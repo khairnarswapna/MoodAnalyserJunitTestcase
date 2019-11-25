@@ -1,5 +1,6 @@
 package com.moodanalyzer;
 
+import org.graalvm.compiler.lir.phases.EconomyAllocationStage;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
@@ -40,5 +41,11 @@ public class MoodAnalyzerTest
             catch(MoodAnalysisException e) {
                 Assert.assertEquals("please Enter valid Mood",e.getMessage());
             }
+        }
+        @Test
+        public void givenMessageForReflectionObject()
+        {
+            MoodAnalyser moodAnalyser=new MoodAnalyser("This is HAPPY message");
+            ObjectReflector.dump(moodAnalyser, 0);
         }
 }
